@@ -1,0 +1,11 @@
+[package]
+name = "ldd_winit"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "staticlib"]
+
+[dependencies]
+display-info = "0.5.1"
+flutter_rust_bridge = "=2.1.0"
