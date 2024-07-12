@@ -13,8 +13,6 @@ pub struct LddDisplayInfo {
     pub name: String,
     /// 与显示器关联的唯一标识符。
     pub id: u32,
-    /// 本机屏幕原始句柄
-    pub raw_handle: u32,
     /// 显示器x坐标
     pub x: i32,
     /// 显示器y坐标。
@@ -38,7 +36,6 @@ impl Into<LddDisplayInfo> for DisplayInfo {
         LddDisplayInfo {
             name: self.name,
             id: self.id,
-            raw_handle: self.raw_handle.id,
             x: self.x,
             y: self.y,
             width: self.width,

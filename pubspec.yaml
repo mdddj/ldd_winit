@@ -1,6 +1,6 @@
 name: ldd_winit
 description: "Read the list of available computer monitors"
-version: 0.0.1
+version: 0.0.2
 repository: "https://github.com/mdddj/ldd_winit"
 
 environment:

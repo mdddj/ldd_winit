@@ -20,9 +20,6 @@ class LddDisplayInfo {
   /// 与显示器关联的唯一标识符。
   final int id;
 
-  /// 本机屏幕原始句柄
-  final int rawHandle;
-
   /// 显示器x坐标
   final int x;
 
@@ -50,7 +47,6 @@ class LddDisplayInfo {
   const LddDisplayInfo({
     required this.name,
     required this.id,
-    required this.rawHandle,
     required this.x,
     required this.y,
     required this.width,
@@ -65,7 +61,6 @@ class LddDisplayInfo {
   int get hashCode =>
       name.hashCode ^
       id.hashCode ^
-      rawHandle.hashCode ^
       x.hashCode ^
       y.hashCode ^
       width.hashCode ^
@@ -82,7 +77,6 @@ class LddDisplayInfo {
           runtimeType == other.runtimeType &&
           name == other.name &&
           id == other.id &&
-          rawHandle == other.rawHandle &&
           x == other.x &&
           y == other.y &&
           width == other.width &&
